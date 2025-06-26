@@ -105,6 +105,12 @@ nav ul li:hover > ul {
   display: block;
 }
 
+nav ul li a:hover {
+  background: #f5c421;   /* or any color you like */
+  color: #fff;
+  transition: background 0.2s, color 0.2s;
+}
+
 nav ul ul li {
   display: block;
   background: #e6e6e6;
