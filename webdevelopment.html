@@ -1,4 +1,3 @@
-</body>
 </html><!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,6 +8,7 @@
   </head>
   <body>
     <h1>Web Dev</h1>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     <!-- <nav>
       <a href="index.html" title="Go to Home Page">Home</a>
       <a href="about.html" title="Go to Home About">About</a>
@@ -113,6 +113,12 @@
     </tr>
   </tbody>
 </table>
-
   </body>
+  <script>
+  const navToggle = document.querySelector(".nav-toggle");
+  const navUl = document.querySelector("nav ul");
+  navToggle.addEventListener("click", () => {
+    navUl.classList.toggle("show");
+  });
+</script>
 </html>

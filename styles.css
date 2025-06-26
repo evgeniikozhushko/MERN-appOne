@@ -3,6 +3,28 @@ body {
   padding: 3rem;
 }
 
+/* img {
+  width: 400px;
+} */
+
+.main-layout {
+  display: flex;
+  /* height: 100vh; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content {
+  flex: 1;
+  display: block; /* Ensure nav and content stack normally */
+}
+
+.main-layout img {
+  width: 400px;
+  max-width: 48vw;
+  height: auto;
+  margin-right: 6rem;
+}
 /* nav ul {
   list-style: none;
   padding: 0;
