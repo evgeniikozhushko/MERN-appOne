@@ -86,10 +86,10 @@ async function readUser() {
 // }
 
 // Function Calls
-createUser("User 1", 21, "female");
-createUser("User 2", 45, "male");
-createUser("User 3", 14, "male");
-readUser();
+// createUser("User 1", 21, "female");
+// createUser("User 2", 45, "male");
+// createUser("User 3", 14, "male");
+// readUser();
 // updateUser(35);
 // deleteUser();
 // sortAndLimitUser();

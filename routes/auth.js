@@ -3,12 +3,7 @@ const passport = require("passport");
 const bcrypt = require("bcrypt");
 const User = require("../models/User");
 const router = express.Router();
-
-// 🔐 Middleware: Auth Protection. Only allows access if user is authenticated (req.isAuthenticated() is provided by Passport).
-function ensureAuth(req, res, next) {
-  if (req.isAuthenticated()) return next();
-  res.redirect("/login");
-}
+const ensureAuth = require('../middleware/ensureAuth')
 
 // 🧾 Registration Page - Renders the registration form.
 router.get("/register", (req, res) => res.render("register"));
