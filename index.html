@@ -13,6 +13,7 @@
       <a href="about.html" title="Go to Home About">About</a>
       <a href="contact.html" title="Go to Home Contact">Contact</a>
     </nav> -->
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     <nav>
       <ul>
         <li><a href="index.html" title="Go to Home Page">Home</a></li>
@@ -29,4 +30,11 @@
       </ul>
     </nav>
   </body>
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const navUl = document.querySelector("nav ul");
+    navToggle.addEventListener("click", () => {
+      navUl.classList.toggle("show");
+    });
+  </script>
 </html>

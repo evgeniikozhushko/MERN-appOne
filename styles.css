@@ -3,7 +3,7 @@ body {
   padding: 3rem;
 }
 
-nav ul {
+/* nav ul {
   list-style: none;
   padding: 0;
   margin: 0 0 2rem 0;
@@ -14,6 +14,48 @@ nav ul li {
   position: relative;
   background: #e6e6e6;
   border-radius: 5px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 30px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #303030;
+  text-align: left;
+} */ */
+
+/* Drop-down menu styles */
+/* nav ul ul {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #e6e6e6;
+  border-radius: 5px;
+  min-width: 160px;
+  z-index: 1000;
+} */
+
+/* Base nav styles (desktop) */
+
+nav {
+ display: flex;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  position: relative;
+  background: #e6e6e6;
+  border-radius: 5px;
+  margin-right: 8px;
 }
 
 nav ul li a {
@@ -37,13 +79,17 @@ nav ul ul {
   z-index: 1000;
 }
 
+nav ul li:hover > ul {
+  display: block;
+}
+
 nav ul ul li {
   display: block;
   background: #e6e6e6;
 }
 
-nav ul li:hover > ul {
-  display: block;
+nav ul ul li a {
+  white-space: nowrap;
 }
 
 /* Table styling */
@@ -61,4 +107,35 @@ tbody td:nth-child(3) {
 
 tbody td:nth-child(3):hover {
   color: inherit;
+}
+
+/* Hamburger button styles */
+.nav-toggle {
+  display: none;
+  background: #e6e6e6;
+  border: none;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  nav ul li {
+    margin: 0 0 8px 0;
+  }
+  nav ul ul {
+    position: static;
+    min-width: 0;
+  }
 }
