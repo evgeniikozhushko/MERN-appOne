@@ -90,6 +90,25 @@ This is a Node.js/Express application with MongoDB for user management and authe
 
 ---
 
+## MERN Stack Table Lab (HTML & CSS)
+
+This project also includes a front-end component that demonstrates your ability to work with semantic HTML tables and apply clean CSS styling.
+
+### 🔍 What it Includes:
+An interactive table featuring **10 MERN stack interview questions** with:
+- 5 structured columns: Question ID, Question, Answer (revealed on hover), Explanation, and Category
+- CSS styles including:
+  - Borders and padding
+  - Striped rows
+  - Row highlight on hover
+  - Answer reveal on hover for self-assessment
+- Fully semantic HTML markup (`<thead>`, `<tbody>`, `<tr>`, `<td>`, etc.)
+
+📍 To access it:
+Navigate to the **Web Development** tab under the **Services** section of the site, then scroll to the **MERN Interview Table**. Users can test their knowledge by hovering over the answer cells to reveal the correct answers.
+
+---
+
 ## Notes
 
 - Static files should be placed in the `public` directory.
